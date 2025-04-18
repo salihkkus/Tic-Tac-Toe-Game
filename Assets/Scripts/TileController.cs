@@ -31,6 +31,7 @@ public class TileController : MonoBehaviour, IPointerDownHandler
     if(result.Item1)
     {
       Debug.Log($"Winner => {result.Item2}");
+      GameManager.Instance.OnGameOver();
     }
   }
 

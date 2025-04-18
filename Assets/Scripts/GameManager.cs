@@ -10,9 +10,24 @@ public class GameManager : MonoBehaviour
   [SerializeField] private List<TileController> listTileController;
   public int Turn{get; set;}
 
+  public bool IsStartGame {get; set;}
+  [SerializeField] private Canvas canvas;
+
     private void Awake()
     {
         Instance = this;
+    }
+
+    public void OnStartGame()
+    {
+      IsStartGame = true;
+      canvas.enabled = false;
+    }
+
+    public void OnGameOver()
+    {
+      IsStartGame = false;
+      canvas.enabled = true;
     }
 
     public (bool, TileState) HasWinner()
@@ -38,5 +53,11 @@ public class GameManager : MonoBehaviour
 		}
 
 		return (false, TileState.None);
-}
+} 
+ 
+public bool HasNoneTile()
+	{
+		return listTileController.Exists(x => x.MyState == TileState.None);
+	}
+
 }
