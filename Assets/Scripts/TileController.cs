@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,32 +7,34 @@ using UnityEngine.Tilemaps;
 
 public class TileController : MonoBehaviour, IPointerDownHandler
 {
-    public TileState MyState { get; set; }
-    public Vector2 coordinate;
-    [SerializeField] private SpriteRenderer mySpriteRenderer;
-    [SerializeField] Color xColor;
-    [SerializeField] Color oColor;
 
-
+  public TileState MyState { get; set; }
+  public Vector2 coordinate;
+  [SerializeField] private SpriteRenderer mySpriteRenderer;
+  [SerializeField] private Sprite xSprite;
+  [SerializeField] private Sprite oSprite;
+  
+  [SerializeField] Color xColor;
+  [SerializeField] Color oColor;
 
   public void  OnPointerDown(PointerEventData eventData)
   {
     if(MyState != TileState.None)
     return;
+    
 
     var state = GameManager.Instance.Turn % 2 == 0 ? TileState.X : TileState.O;
     SetState(state);
     GameManager.Instance.Turn++;
 
-     var result = GameManager.Instance.HasWinner();
+    var result = GameManager.Instance.HasWinner();
     if(result.Item1)
     {
       Debug.Log($"Winner => {result.Item2}");
     }
-
   }
 
-   public void SetState(TileState state)
+  public void SetState(TileState state)
   {
     MyState = state;
     mySpriteRenderer.color = state == TileState.X ? xColor : oColor;
@@ -77,8 +80,9 @@ public class TileController : MonoBehaviour, IPointerDownHandler
     return GameManager.Instance.ListTileController.Find(tile => tile.coordinate == nextTileCoordinate);
 
 }
+}
 
-   public enum TileState
+  public enum TileState
   {
     None,
     X,
@@ -89,5 +93,3 @@ public class TileController : MonoBehaviour, IPointerDownHandler
   {
     Up, UpRight, Right, Down, DownRight, Left, UpLeft, LeftDown
   }
-
-}

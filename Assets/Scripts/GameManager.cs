@@ -1,23 +1,21 @@
-using System.Collections;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-public static GameManager Instance {get; private set;}
-public List<TileController> ListTileController => listTileController;
-
-[SerializeField] private List<TileController> listTileController;
-
-public int Turn{get; set;}
+  public static GameManager Instance {get; private set;}
+  public List<TileController> ListTileController => listTileController;
+  [SerializeField] private List<TileController> listTileController;
+  public int Turn{get; set;}
 
     private void Awake()
     {
         Instance = this;
     }
 
-  public (bool, TileState) HasWinner()
+    public (bool, TileState) HasWinner()
 	{
 		foreach (var tile in listTileController)
 		{
@@ -41,6 +39,4 @@ public int Turn{get; set;}
 
 		return (false, TileState.None);
 }
-
-
 }
