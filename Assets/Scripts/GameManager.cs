@@ -2,6 +2,9 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,6 +15,9 @@ public class GameManager : MonoBehaviour
 
   public bool IsStartGame {get; set;}
   [SerializeField] private Canvas canvas;
+  [SerializeField] private TextMeshProUGUI textStart;
+  [SerializeField] private TextMeshProUGUI textWinner;
+  [SerializeField] private Button buttonRestart;
 
     private void Awake()
     {
@@ -24,7 +30,7 @@ public class GameManager : MonoBehaviour
       canvas.enabled = false;
     }
 
-    public void OnGameOver()
+    public void OnGameOver(TileState tileState)
     {
       IsStartGame = false;
       canvas.enabled = true;

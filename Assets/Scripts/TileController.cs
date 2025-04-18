@@ -21,6 +21,8 @@ public class TileController : MonoBehaviour, IPointerDownHandler
   {
     if(MyState != TileState.None)
     return;
+
+    
     
 
     var state = GameManager.Instance.Turn % 2 == 0 ? TileState.X : TileState.O;
@@ -28,10 +30,16 @@ public class TileController : MonoBehaviour, IPointerDownHandler
     GameManager.Instance.Turn++;
 
     var result = GameManager.Instance.HasWinner();
-    if(result.Item1)
+    var hasWinner = result.Item1;
+    if(hasWinner)
     {
       Debug.Log($"Winner => {result.Item2}");
       GameManager.Instance.OnGameOver();
+    }
+    else
+    {
+        GameManager.Instance.HasNoneTile();
+        GameManager.Instance.OnGameOver();
     }
   }
 
