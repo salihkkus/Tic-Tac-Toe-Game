@@ -231,6 +231,6 @@ MonoBehaviour:
   coordinate: {x: 0, y: 0}
   mySpriteRenderer: {fileID: 8951353592633135390}
   xSprite: {fileID: 21300000, guid: 122da3e1027f8a644b51e609f41ca502, type: 3}
-  oSprite: {fileID: 21300000, guid: 00d98f03c5c4aa444b876c24196b8a9e, type: 3}
+  oSprite: {fileID: 21300000, guid: d4255a1d017356f48bcca15adcab5298, type: 3}
   xColor: {r: 0, g: 1, b: 0.06818819, a: 1}
   oColor: {r: 1, g: 0, b: 0, a: 1}

@@ -17,13 +17,10 @@ public class TileController : MonoBehaviour, IPointerDownHandler
   [SerializeField] Color xColor;
   [SerializeField] Color oColor;
 
-  public void  OnPointerDown(PointerEventData eventData)
-  {
-    if(MyState != TileState.None)
-    return;
-
-    
-    
+  public void OnPointerDown(PointerEventData eventData)
+{
+    if (MyState != TileState.None)
+        return;
 
     var state = GameManager.Instance.Turn % 2 == 0 ? TileState.X : TileState.O;
     SetState(state);
@@ -31,24 +28,29 @@ public class TileController : MonoBehaviour, IPointerDownHandler
 
     var result = GameManager.Instance.HasWinner();
     var hasWinner = result.Item1;
-    if(hasWinner)
+    if (hasWinner)
     {
-      Debug.Log($"Winner => {result.Item2}");
-      GameManager.Instance.OnGameOver();
+        Debug.Log($"Winner => {result.Item2}");
+        GameManager.Instance.OnGameOver(result.Item2); // Burada kazananı gönderiyorsun
     }
     else
     {
         GameManager.Instance.HasNoneTile();
-        GameManager.Instance.OnGameOver();
+        GameManager.Instance.OnGameOver(TileState.None); // Beraberlik durumunu belirtiyorsun
     }
-  }
+}
+
 
   public void SetState(TileState state)
   {
     MyState = state;
     mySpriteRenderer.color = state == TileState.X ? xColor : oColor;
     mySpriteRenderer.sprite = state == TileState.X ? xSprite : oSprite;
+
+    if(state == TileState.None) mySpriteRenderer.sprite = null;
   }
+
+
 
   public TileController GetNextTile(Direction direction)
 	{
@@ -102,4 +104,4 @@ public class TileController : MonoBehaviour, IPointerDownHandler
   public enum Direction
   {
     Up, UpRight, Right, Down, DownRight, Left, UpLeft, LeftDown
-  }
+  } 

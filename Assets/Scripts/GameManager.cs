@@ -1,9 +1,9 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -28,12 +28,46 @@ public class GameManager : MonoBehaviour
     {
       IsStartGame = true;
       canvas.enabled = false;
+      buttonRestart.gameObject.SetActive(false);
+      textWinner.enabled = false;
     }
-
+    
+    public void OnClick_RestartGameButton()
+    {
+     OnStartGame();
+     foreach(var tile in listTileController)
+     {
+        tile.SetState(TileState.None);
+     }
+    }
     public void OnGameOver(TileState tileState)
     {
       IsStartGame = false;
       canvas.enabled = true;
+      textStart.enabled = false;
+      textWinner.enabled = true;
+
+      string result = "";
+
+      switch(tileState)
+      {
+        case TileState.X:
+        result = "Winner X";
+        break;
+
+        case TileState.O:
+        result = "Winner O";
+        break;
+
+        default : 
+        result = "DRAW";
+        break;
+      }
+    
+    textWinner.text = result;
+
+    buttonRestart.gameObject.SetActive(true);
+
     }
 
     public (bool, TileState) HasWinner()
