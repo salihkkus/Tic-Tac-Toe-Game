@@ -13,7 +13,7 @@ public class TileController : MonoBehaviour, IPointerDownHandler
   [SerializeField] private SpriteRenderer mySpriteRenderer;
   [SerializeField] private Sprite xSprite;
   [SerializeField] private Sprite oSprite;
-  
+
   [SerializeField] Color xColor;
   [SerializeField] Color oColor;
 
@@ -38,6 +38,7 @@ public class TileController : MonoBehaviour, IPointerDownHandler
   {
     MyState = state;
     mySpriteRenderer.color = state == TileState.X ? xColor : oColor;
+    mySpriteRenderer.sprite = state == TileState.X ? xSprite : oSprite;
   }
 
   public TileController GetNextTile(Direction direction)
