@@ -131,6 +131,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1203257331896387328, guid: 10be738bced6297458f07936de07ca09, type: 3}
+      propertyPath: coordinate.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3374068656611737643, guid: 10be738bced6297458f07936de07ca09, type: 3}
       propertyPath: m_Name
       value: Tile (1)
@@ -256,6 +260,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1203257331896387328, guid: 10be738bced6297458f07936de07ca09, type: 3}
+      propertyPath: coordinate.y
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 3374068656611737643, guid: 10be738bced6297458f07936de07ca09, type: 3}
       propertyPath: m_Name
       value: Tile (2)
@@ -549,6 +557,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1203257331896387328, guid: 10be738bced6297458f07936de07ca09, type: 3}
+      propertyPath: coordinate.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1203257331896387328, guid: 10be738bced6297458f07936de07ca09, type: 3}
+      propertyPath: coordinate.y
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 3374068656611737643, guid: 10be738bced6297458f07936de07ca09, type: 3}
       propertyPath: m_Name
       value: Tile (5)
@@ -606,6 +622,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1203257331896387328, guid: 10be738bced6297458f07936de07ca09, type: 3}
+      propertyPath: coordinate.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1203257331896387328, guid: 10be738bced6297458f07936de07ca09, type: 3}
+      propertyPath: coordinate.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3374068656611737643, guid: 10be738bced6297458f07936de07ca09, type: 3}
       propertyPath: m_Name
       value: Tile (4)
@@ -663,6 +687,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1203257331896387328, guid: 10be738bced6297458f07936de07ca09, type: 3}
+      propertyPath: coordinate.x
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 3374068656611737643, guid: 10be738bced6297458f07936de07ca09, type: 3}
       propertyPath: m_Name
       value: Tile (6)
@@ -720,6 +748,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1203257331896387328, guid: 10be738bced6297458f07936de07ca09, type: 3}
+      propertyPath: coordinate.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1203257331896387328, guid: 10be738bced6297458f07936de07ca09, type: 3}
+      propertyPath: coordinate.y
+      value: -1
+      objectReference: {fileID: 0}
     - target: {fileID: 3374068656611737643, guid: 10be738bced6297458f07936de07ca09, type: 3}
       propertyPath: m_Name
       value: Tile (8)
@@ -777,6 +813,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1203257331896387328, guid: 10be738bced6297458f07936de07ca09, type: 3}
+      propertyPath: coordinate.x
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3374068656611737643, guid: 10be738bced6297458f07936de07ca09, type: 3}
       propertyPath: m_Name
       value: Tile (3)
@@ -834,6 +874,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1203257331896387328, guid: 10be738bced6297458f07936de07ca09, type: 3}
+      propertyPath: coordinate.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1203257331896387328, guid: 10be738bced6297458f07936de07ca09, type: 3}
+      propertyPath: coordinate.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3374068656611737643, guid: 10be738bced6297458f07936de07ca09, type: 3}
       propertyPath: m_Name
       value: Tile (7)
