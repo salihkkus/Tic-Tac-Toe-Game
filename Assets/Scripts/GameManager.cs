@@ -52,11 +52,11 @@ public class GameManager : MonoBehaviour
       switch(tileState)
       {
         case TileState.X:
-        result = "Winner X";
+        result = "WINNER X";
         break;
 
         case TileState.O:
-        result = "Winner O";
+        result = "WINNER O";
         break;
 
         default : 
