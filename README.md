@@ -61,6 +61,4 @@ This project is open-source and available under the MIT License.
 - For any questions or suggestions, reach out via GitHub issues or contact [sskarakussalih77@gmail.com].
 - Enjoy playing Tic Tac Toe! 🚀
 
----
 
-Enjoy playing Tic Tac Toe! 🚀
