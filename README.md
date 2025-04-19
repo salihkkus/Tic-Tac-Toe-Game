@@ -44,10 +44,8 @@ To get started with this project, follow these steps:
 
 ### Example Gameplay
 
-![Gameplay Screenshot]
-![1](https://github.com/user-attachments/assets/aa327d81-8289-48ea-95a8-f8d956c475f6)
-![2](https://github.com/user-attachments/assets/005a33ab-c7f0-4bfb-9dfe-770d83e4feed)
-![3](https://github.com/user-attachments/assets/76ac9abb-6668-42a4-b0c6-7c421312c24b)
+![Gameplay Screenshot]![MergedImages](https://github.com/user-attachments/assets/8b888348-bd4d-4f59-b6c7-07bceca804c0)
+
 
 
 ## Contributing
