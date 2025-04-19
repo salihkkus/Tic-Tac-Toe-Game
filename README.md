@@ -64,4 +64,3 @@ This project is open-source and available under the MIT License.
 ---
 
 Enjoy playing Tic Tac Toe! 🚀
-```
