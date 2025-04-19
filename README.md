@@ -44,7 +44,7 @@ To get started with this project, follow these steps:
 
 ### Example Gameplay
 
-![Gameplay Screenshot]![MergedImages](https://github.com/user-attachments/assets/8b888348-bd4d-4f59-b6c7-07bceca804c0)
+![MergedImages](https://github.com/user-attachments/assets/8b888348-bd4d-4f59-b6c7-07bceca804c0)
 
 
 
