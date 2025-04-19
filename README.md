@@ -1,4 +1,3 @@
-
 # Tic Tac Toe Game
 
 A simple 2-player Tic Tac Toe game built using **Unity**. This game allows two players to compete against each other on a 3x3 grid. The first player to align three of their marks (either "X" or "O") horizontally, vertically, or diagonally wins the game.
@@ -27,7 +26,7 @@ To get started with this project, follow these steps:
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/yourusername/tic-tac-toe.git
+   git clone https://github.com/salihkkus/tic-tac-toe.git
    ```
 
 2. **Open the Project in Unity:**
@@ -45,7 +44,11 @@ To get started with this project, follow these steps:
 
 ### Example Gameplay
 
-![Gameplay Screenshot](link_to_your_screenshot.png)
+![Gameplay Screenshot]
+![1](https://github.com/user-attachments/assets/aa327d81-8289-48ea-95a8-f8d956c475f6)
+![2](https://github.com/user-attachments/assets/005a33ab-c7f0-4bfb-9dfe-770d83e4feed)
+![3](https://github.com/user-attachments/assets/76ac9abb-6668-42a4-b0c6-7c421312c24b)
+
 
 ## Contributing
 
@@ -58,6 +61,7 @@ This project is open-source and available under the MIT License.
 
 - Created by [Salih Karakuş](https://github.com/salihkkus).
 - For any questions or suggestions, reach out via GitHub issues or contact [sskarakussalih77@gmail.com].
+- Enjoy playing Tic Tac Toe! 🚀
 
 ---
 
